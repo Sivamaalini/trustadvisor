@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FlashDeal Store - Amazing Offers!</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#fff;}
+.banner{background:#c00;color:#fff;text-align:center;padding:10px;font-size:14px;font-weight:bold;}
+.hero{background:#1a1a2e;color:#fff;padding:40px 20px;text-align:center;}
+.hero h1{font-size:36px;margin-bottom:10px;}
+.timer{background:#ff6b00;color:#fff;padding:15px;text-align:center;font-size:24px;font-weight:bold;}
+.product{max-width:600px;margin:20px auto;padding:20px;border:1px solid #ddd;}
+.price-old{text-decoration:line-through;color:#999;font-size:18px;}
+.price-new{color:#c00;font-size:32px;font-weight:bold;}
+.scarcity{background:#fff3cd;border:1px solid #ffc107;padding:10px;margin:10px 0;color:#856404;}
+.social-proof{background:#d4edda;border:1px solid #28a745;padding:10px;margin:10px 0;color:#155724;}
+.btn-buy{background:#ff6b00;color:#fff;border:none;padding:15px 40px;font-size:18px;cursor:pointer;width:100%;margin:10px 0;}
+.btn-no{color:#999;font-size:11px;text-align:center;display:block;margin-top:5px;cursor:pointer;}
+.form-section{max-width:600px;margin:20px auto;padding:20px;background:#f9f9f9;border:1px solid #ddd;}
+.hidden-fee{color:#888;font-size:10px;margin-top:5px;}
+.newsletter-popup{background:#fff;border:2px solid #1a1a2e;padding:20px;max-width:400px;margin:20px auto;text-align:center;}
+footer{background:#1a1a2e;color:#888;padding:20px;text-align:center;font-size:11px;}
+</style>
+</head>
+<body>
+
+<div class="banner">🔥 FLASH SALE ENDS IN 02:47:13 — ACT NOW OR MISS OUT FOREVER!</div>
+
+<div class="hero">
+  <h1>Limited Time Offer — Only Today!</h1>
+  <p>Join 48,291 happy customers who already saved big!</p>
+</div>
+
+<div class="timer" id="countdown">⏱ OFFER EXPIRES IN: 02:47:13 — HURRY!</div>
+
+<div class="product">
+  <h2>Premium Subscription Bundle</h2>
+  <p class="price-old">$199.99</p>
+  <p class="price-new">$19.99/month</p>
+  <div class="scarcity">⚠️ Only 3 left at this price! 127 people are viewing this right now.</div>
+  <div class="social-proof">✅ #1 Best Seller — 48,291 satisfied customers. Most popular choice!</div>
+
+  <form id="purchaseForm">
+    <input type="email" placeholder="Enter your email" style="width:100%;padding:10px;margin:5px 0;box-sizing:border-box;">
+    <input type="password" name="password" placeholder="Create password" style="width:100%;padding:10px;margin:5px 0;box-sizing:border-box;">
+    <input type="text" placeholder="Credit card number" style="width:100%;padding:10px;margin:5px 0;box-sizing:border-box;">
+    <br>
+    <label><input type="checkbox" name="newsletter" checked> Subscribe to weekly newsletters (unsubscribe anytime*)</label><br>
+    <label><input type="checkbox" name="autorenew" checked> Enable auto-renewal — your subscription renews automatically every month</label><br>
+    <label><input type="checkbox" name="share" checked> Share my data with trusted partners for personalised offers</label><br>
+    <button class="btn-buy" type="button">YES! CLAIM MY DEAL NOW — SAVE 90% TODAY!</button>
+    <span class="btn-no">No thanks, I don't want to save money and I prefer to pay full price.</span>
+    <p class="hidden-fee">* Processing fee $4.99, handling $2.50, admin fee $3.00 applied at checkout. Prices exclude tax. Auto-renews at $49.99/month after trial. Cancel anytime by calling our support line 9am-5pm Mon-Fri.</p>
+  </form>
+</div>
+
+<div class="form-section">
+  <h3>Get Our Newsletter — Sign Up for Free!</h3>
+  <p>Join our mailing list and receive exclusive deals directly to your inbox.</p>
+  <input type="email" placeholder="Your email address" style="width:70%;padding:8px;">
+  <button style="background:#1a1a2e;color:#fff;padding:8px 16px;border:none;">Subscribe to our newsletter</button>
+</div>
+
+<!-- Hidden elements -->
+<div style="display:none;" id="hiddenOffer">
+  You have been selected for a special prize! Claim your lottery winner reward now — unclaimed funds waiting.
+</div>
+<div style="visibility:hidden;" id="hiddenMsg">
+  Verify your account immediately. Suspicious activity detected. Click here to confirm your identity.
+</div>
+
+<!-- Hidden unsubscribe link -->
+<p style="color:#fff;font-size:1px;opacity:0;">
+  <a href="/unsubscribe" style="color:#fff;">unsubscribe from all emails</a>
+</p>
+
+<!-- Hidden iframe -->
+<iframe src="https://tracker.example.com/pixel" width="0" height="0" style="display:none;"></iframe>
+
+<div class="newsletter-popup">
+  <h3>⚡ Don't Miss Out!</h3>
+  <p>This offer expires soon. Act now — last chance to save!</p>
+  <button style="background:#c00;color:#fff;padding:10px 30px;border:none;cursor:pointer;">YES, I WANT TO SAVE!</button>
+  <br>
+  <small style="color:#999;cursor:pointer;">No thanks, I prefer to lose money.</small>
+</div>
+
+<footer>
+  <p>© 2024 FlashDeal Store. All rights reserved.</p>
+  <p>By using this site you agree to recurring billing, automatic renewal terms, and data sharing with our partners.</p>
+  <p style="font-size:9px;color:#555;">*Prices subject to change. Additional fees may apply. Processing fee added at checkout. Free trial converts to paid plan automatically. Cancel by phone only.</p>
+</footer>
+
+</body>
+</html>
