@@ -291,8 +291,9 @@ def _serialize(d: dict) -> dict:
             out[k] = str(v)
     return out
 
+import os
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     logger.info("Starting AI Website Trust Advisor...")
-    logger.info("Open http://127.0.0.1:5000 in your browser")
-    app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=False)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
